@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container grid">
+
+        <div class="color-box grid-item"></div>
+
+        <div class="adjustment grid-item flex">
+
+            <div class="direction flex-item grid">
+                <p>Direction</p>
+                <select name="Directions" id="directionInp">
+                    <option value="left" selected>left</option>
+                    <option value="top left">top-left</option>
+                    <option value="top">top</option>
+                    <option value="top right">top-right</option>
+                    <option value="right">right</option>
+                    <option value="bottom right">bottom-right</option>
+                    <option value="bottom">bottom</option>
+                    <option value="bottom left">bottom-left</option>
+                </select>
+            </div>
+
+            <div class="colors flex-item grid">
+                <p>Colors</p>
+                <div class="color-inputs flex">
+                    <input class="flex-item" type="color" name="" id="" value="#ffc0cb">
+                    <input class="flex-item" type="color" name="" id="" value="#800080">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="textarea grid-item">
+            <textarea name="gradient" id="gradientInp" disabled>background: linear-gradient(to left,pink,purple);
+            </textarea>
+        </div>
+
+        <div class="btns grid-item flex">
+            <button type="button" class="refreshBtn">Refresh Colors</button>
+            <button type="button" class="copyBtn">Copy Code</button>
+        </div>
+
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
